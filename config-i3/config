@@ -25,7 +25,7 @@ for_window [title="Screenshot"]              floating enable
 for_window [title="Evernote Web Clipper"]    floating enable
 
 # jetbrains application start project window
-# for_window [title="Welcome to PyCharm"]          floating enable resize set 800 600, move position center
+for_window [title="Welcome to PyCharm"]          floating enable resize set 800 600, move position center
 # for_window [title="Welcome to IntelliJ IDEA"]    floating enable resize set 800 600, move position center
 # for_window [title="Welcome to DataGrip"]         floating enable resize set 800 600, move position center
 # for_window [title="Welcome to WebStorm"]         floating enable resize set 800 600, move position center
@@ -46,7 +46,7 @@ for_window [title="Evernote Web Clipper"]    floating enable
 #exec_always --no-startup-id clash
 #exec_always --no-startup-id bash /home/merak/scripts/wallpaper-wrap.sh && sleep 1 && picom --conf ~/.config/picom/picom.conf
 #exec feh --randomize --bg-fill ~/Pictures/Background/Desktop_backgrd
-exec_always --no-startup-id xrandr -s 21 &
+#exec_always --no-startup-id xrandr -s 21 &
 exec_always --no-startup-id bash /home/merak/scripts/wallpaper.sh &
 exec_always --no-startup-id picom -CGb &
 #exec_always bash ~/.config/polybar/launch.sh --cuts
@@ -58,15 +58,15 @@ exec_always --no-startup-id picom -CGb &
 exec_always --no-startup-id fcitx5 -d
 #exec_always --no-startup-id ~/scripts/wallpaper.sh
 #exec_always --no-startup-id screenkey
-exec_always --no-startup-id nm-applet
-exec_always --no-startup-id blueman-applet
+#exec_always --no-startup-id nm-applet
+#exec_always --no-startup-id blueman-applet
 #exec_always --no-startup-id pamac-tray
 exec_always --no-startup-id optimus-manager-qt
 exec_always --no-startup-id acpi
 exec_always --no-startup-id qv2ray
 exec_always --no-startup-id mate-power-manager
 exec_always --no-startup-id autotiling
-exec_always --no-startup-id dunst
+#exec_always --no-startup-id dunst
 
 #启动常用软件
 bindsym $mod+c exec --no-startup-id chromium

@@ -3,6 +3,25 @@
 
 My ~/.config in Arch_Linux
 
+## usb
+This time I install arch on my usb.
+I refered to:
+
+[ArchLinux USB](https://mags.zone/arch-usb.html)
+
+[installation guide 简体中文](https://wiki.archlinux.org/title/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+
+[Archlinux 在Vmware中的安装](https://blog.csdn.net/qq_41605439/article/details/113256605)
+
+When I boot the system on the USB stick, the problem occurs:
+
+`EFI UUID'fa1236_josdf234_sdf245' not found`
+
+I try to add content to Hooks in file `/etc/mkinitcpio.conf`.
+I refer to [[mkinitcpio] unable to boot intel nvme after install due to missing vmd module](https://bugs.archlinux.org/task/68704)
+and 
+[为什么 Arch 安装到U盘不能启动](https://forum.ubuntu.org.cn/viewtopic.php?p=2814501)
+
 ## xorg
 See
 
@@ -19,6 +38,28 @@ sudo pacman -S ttf-droid wqy-microhei wqy-zenhei noto-fonts-emoji ttf-font-aweso
 sudo pacman -S alacritty    # 安装终端 ，可选择其它终端，各人喜好。
 cp /etc/X11/xinit/xinitrc ~/.xinitrc                        #复制桌面启动文件
 ```
+I have set a 1920x1080 resolution, according to this video:
+[4.[arch 配置系列]更换壁纸、更改分辨率](https://www.bilibili.com/video/BV1ci4y1A7rq?spm_id_from=333.1007.top_right_bar_window_history.cotent.click)
+
+## i3
+### information
+[i3wm](https://i3wm.org)
+
+i3 is a titling window manager.
+
+`<Alt> + <Enter>` to open terminal.
+
+`<Alt> + 2` to move window to window2.
+
+`<Alt> + <Shift> + 2` to turn to window2.
+
+`<Alr> + <Shift> + q` to close window.
+### config
+`~/.config/i3/config`
+
+See
+[Allen191819](https://github.com/Allen191819/dotfiles)
+
 ## alacritty
 
 My terminal.
@@ -26,6 +67,35 @@ My terminal.
 `<Alt> + <Enter>` to open terminal.
 
 `<Alr> + <Shift> + q` to close.
+## fish
+My shell.
+But not recommended.
+### oh-my-fish
+Select theme "toaster".
+
+Some necessary packages should be installed according to `~/.config/fish/functions`
+### chmod
+Generally I replace the newly default file with my back file.So I may face the problem with no permissions. If this occurs, I should `chmod -R 777 *`
+
+## lvim
+***lunarvim***
+
+Preparation:
+- nodejs
+- yarn
+- npm
+- rust export environment path
+- lua
+
+After installation need to install nerd-fonts in GitHub.
+
+## pacman
+```
+pacman -Qei > pacmanList.lst
+cat pacmanList.lst | grep "Name" > pacmanListName.lst
+```
+The list of packages installed by pacman is in the file `pacman.lst` and `pacmanName.lst`.
+
 ## fcitx5
 Better to google or baidu.
 See
@@ -50,41 +120,6 @@ Default is English.
 
 Print information of system.
 
-## fish
-My shell.
-
-But not recommended.
-## lvim
-***lunarvim***
-
-Preparation:
-- nodejs
-- yarn
-- npm
-- rust export environment path
-- lua
-
-After installation need instal nerd-fonts
-
-## i3
-### information
-[i3wm](https://i3wm.org)
-
-i3 is a titling window manager.
-
-`<Alt> + <Enter>` to open terminal.
-
-`<Alt> + 2` to move window to window2.
-
-`<Alt> + <Shift> + 2` to turn to window2.
-
-`<Alr> + <Shift> + q` to close window.
-### config
-`~/.config/i3/config`
-
-see
-[Allen191819](https://github.com/Allen191819/dotfiles)
-
 ## picom
 picom is a standalone compositor for Xorg, suitable for use with window managers that
 do not provide compositing.
@@ -97,6 +132,8 @@ see
 
 [ranger](https://ranger.github.io/)
 is a console file manager with VI key bindings.
+
+After set fish, I can use `r` to start.
 
 ## rofi
 ## eva
