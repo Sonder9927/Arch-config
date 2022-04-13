@@ -71,9 +71,14 @@ My terminal.
 My shell.
 But not recommended.
 ### oh-my-fish
+Use `omf install theme/package`
+
 Select theme "toaster".
 
 Some necessary packages should be installed according to `~/.config/fish/functions`
+
+Use `pacman -S package`.
+
 ### chmod
 Generally I replace the newly default file with my back file.So I may face the problem with no permissions. If this occurs, I should `chmod -R 777 *`
 
@@ -95,7 +100,13 @@ pacman -Qei > pacmanList.lst
 cat pacmanList.lst | grep "Name" > pacmanListName.lst
 ```
 The list of packages installed by pacman is in the file `pacman.lst` and `pacmanName.lst`.
+## autojump
+`j somewhere`
 
+Very useful. See
+[Fissh Shell 使用笔记](https://segmentfault.com/a/1190000017843344?utm_source=tag-newest)
+
+Care of the path. My path is `/usr/share/autojump/autojump.fish`.
 ## fcitx5
 Better to google or baidu.
 See
