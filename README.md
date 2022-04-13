@@ -41,6 +41,9 @@ cp /etc/X11/xinit/xinitrc ~/.xinitrc                        #复制桌面启动�
 I have set a 1920x1080 resolution, according to this video:
 [4.[arch 配置系列]更换壁纸、更改分辨率](https://www.bilibili.com/video/BV1ci4y1A7rq?spm_id_from=333.1007.top_right_bar_window_history.cotent.click)
 
+`xrandr` find it's "10".
+So `xrandr -s 10` will change resolution to "1920x1080".
+And I have added this content to the config of i3.
 ## i3
 ### information
 [i3wm](https://i3wm.org)
@@ -67,6 +70,17 @@ My terminal.
 `<Alt> + <Enter>` to open terminal.
 
 `<Alr> + <Shift> + q` to close.
+
+Some fonts are necessary:
+- Ficra
+- OperatorMono
+- JetBrainsMono
+
+Just download those as needed.
+But it's better to download [Nerd Font](https://github.com/ryanoasis/nerd-fonts) 
+from GitHub, because lunarvim also need these fonts.
+
+
 ## fish
 My shell.
 But not recommended.
@@ -89,11 +103,13 @@ Preparation:
 - nodejs
 - yarn
 - npm
-- rust export environment path
+- rust: export environment path
 - lua
 
 After installation need to install nerd-fonts in GitHub.
 
+### dashboard
+I modified the `~/.local/share/lunarvim/lvim/lua/lvim/core/alpha/dashboard.lua` with file `dashboard.lua` submitted.
 ## pacman
 ```
 pacman -Qei > pacmanList.lst

@@ -46,7 +46,7 @@ for_window [title="Welcome to PyCharm"]          floating enable resize set 800 
 #exec_always --no-startup-id clash
 #exec_always --no-startup-id bash /home/merak/scripts/wallpaper-wrap.sh && sleep 1 && picom --conf ~/.config/picom/picom.conf
 #exec feh --randomize --bg-fill ~/Pictures/Background/Desktop_backgrd
-#exec_always --no-startup-id xrandr -s 21 &
+exec_always --no-startup-id xrandr -s 10 &
 exec_always --no-startup-id bash /home/merak/scripts/wallpaper.sh &
 exec_always --no-startup-id picom -CGb &
 #exec_always bash ~/.config/polybar/launch.sh --cuts
