@@ -23,6 +23,7 @@ and
 [为什么 Arch 安装到U盘不能启动](https://forum.ubuntu.org.cn/viewtopic.php?p=2814501)
 
 ## xorg
+### startx
 See
 
 [archlinux 安装配置、i3-wm 配置](https://blog.csdn.net/olnautunm/article/details/109954444)
@@ -38,12 +39,32 @@ sudo pacman -S ttf-droid wqy-microhei wqy-zenhei noto-fonts-emoji ttf-font-aweso
 sudo pacman -S alacritty    # 安装终端 ，可选择其它终端，各人喜好。
 cp /etc/X11/xinit/xinitrc ~/.xinitrc                        #复制桌面启动文件
 ```
+
 I have set a 1920x1080 resolution, according to this video:
 [4.[arch 配置系列]更换壁纸、更改分辨率](https://www.bilibili.com/video/BV1ci4y1A7rq?spm_id_from=333.1007.top_right_bar_window_history.cotent.click)
 
+### xrandr
 `xrandr` find it's "10".
 So `xrandr -s 10` will change resolution to "1920x1080".
 And I have added this content to the config of i3.
+
+### xmodmap
+My method for remapping key in archlinux is in the script `xmod.bash`, but there is a bug.
+If I add the command `exec... bash /path/to/xmod.bash` into config of i3, I will have to restart i3 once
+to let it really work.
+
+Maybe there is something running in wrong order.
+
+So I try to set it with using both x and i3. 
+Notice that command `xmodmap` depends on x client,
+and `xcape` can get from [alols's github](https://github.com/alols/xcape)
+
+Referring to `xmod.bash`:
+- Firstly, add `clear ...` into `~/.Xmodmap`.
+`.xinitrc` will run it when start x.
+
+- Finally, add `exec... /path/to/xcape -e "Mode_switch=Tab"` into config of i3.
+
 ## i3
 ### information
 [i3wm](https://i3wm.org)
@@ -94,7 +115,14 @@ Some necessary packages should be installed according to `~/.config/fish/functio
 Use `pacman -S package`.
 
 ### chmod
-Generally I replace the newly default file with my back file.So I may face the problem with no permissions. If this occurs, I should `chmod -R 777 *`
+Generally I replace the newly default file with my back file.
+So I may face the problem with no permissions. If this occurs, I should `chmod -R 777 *`
+
+## zsh
+A useful shell.
+I'd like to use zsh from arcolinux which has a random theme.
+
+Just copy `~/.zshrc` and `/usr/share/oh-my-zsh`.
 
 ## lvim
 ***lunarvim***
@@ -125,6 +153,7 @@ Very useful. See
 Care of the path. My path is `/usr/share/autojump/autojump.fish`.
 ## fcitx5
 Better to google or baidu.
+
 See
 
 [Archlinux/Manjaro 安装 fcitx5](https://blog.csdn.net/qq_39100009/article/details/120316668)
@@ -154,6 +183,7 @@ do not provide compositing.
 see 
 
 [i3 & picom config settings](https://zhuanlan.zhihu.com/p/148067171)
+
 ## ranger
 `ranger`
 
@@ -163,5 +193,8 @@ is a console file manager with VI key bindings.
 After set fish, I can use `r` to start.
 
 ## rofi
+hotkey: `<alt-d>`
 ## eva
-math
+math, type `<alt-m>`
+## cmatrix
+code rain
