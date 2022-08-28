@@ -118,6 +118,11 @@ Use `pacman -S package`.
 Generally I replace the newly default file with my back file.
 So I may face the problem with no permissions. If this occurs, I should `chmod -R 777 *`
 
+### functions
+- replace
+  - ls <- exa
+  - cat <- bat
+
 ## zsh
 A useful shell.
 I'd like to use zsh from arcolinux which has a random theme.

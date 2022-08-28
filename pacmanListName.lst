@@ -1,143 +1,151 @@
-Name            : acpi
-Name            : alacritty
-Name            : archlinuxcn-keyring
-Name            : autoconf
-Name            : autojump
-Name            : automake
-Name            : base
-Name            : bat
-Name            : binutils
-Name            : bison
-Name            : chromium
-Name            : cowsay
-Name            : dhcpcd
-Name            : efibootmgr
-Name            : eva
-Name            : exa
-Name            : fakeroot
-Name            : fcitx5
-Name            : fcitx5-chinese-addons
-Name            : fcitx5-configtool
-Name            : fcitx5-gtk
-Name            : fcitx5-pinyin-zhwiki
-Name            : fcitx5-qt
-Name            : feh
-Name            : file
-Name            : findutils
-Name            : fish
-Name            : flex
-Name            : fzf
-Name            : gawk
-Name            : gcc
-Name            : gettext
-Name            : go
-Name            : grep
-Name            : groff
-Name            : grub
-Name            : gtkmm3
-Name            : gvfs-mtp
-Name            : gzip
-Name            : haveged
-Name            : i3-gaps
-Name            : kcalc
-Name            : lazygit
-Name            : libtool
-Name            : linux
-Name            : linux-firmware
-Name            : lua
-Name            : m4
-Name            : make
-Name            : miniconda
-Name            : neofetch
-Name            : neovim
-Name            : net-tools
-Name            : network-manager-applet
-Name            : networkmanager
-Name            : nm-connection-editor
-Name            : noto-fonts-emoji
-Name            : npm
-Name            : nvm
-Name            : open-vm-tools
-Name            : pacman
-Name            : pamac-aur
-Name            : patch
-Name            : picom
-Name            : pkgconf
-Name            : pnpm
-Name            : polkit
-Name            : proxychains-ng
-Name            : ranger
-Name            : rofi
-Name            : rp-pppoe
-Name            : rust
-Name            : sed
-Name            : sudo
-Name            : texinfo
-Name            : ttf-dejavu
-Name            : ttf-droid
-Name            : ttf-font-awesome
-Name            : ttf-nerd-fonts-symbols
-Name            : ueberzug
-Name            : vi
-Name            : vim
-Name            : which
-Name            : wqy-microhei
-Name            : wqy-zenhei
-Name            : xf86-input-synaptics
-Name            : xf86-input-vmmouse
-Name            : xf86-video-amdgpu
-Name            : xf86-video-intel
-Name            : xf86-video-nouveau
-Name            : xf86-video-vesa
-Name            : xf86-video-vmware
-Name            : xorg-bdftopcf
-Name            : xorg-docs
-Name            : xorg-font-util
-Name            : xorg-fonts-100dpi
-Name            : xorg-fonts-75dpi
-Name            : xorg-fonts-encodings
-Name            : xorg-iceauth
-Name            : xorg-mkfontscale
-Name            : xorg-server
-Name            : xorg-server-common
-Name            : xorg-server-devel
-Name            : xorg-server-xephyr
-Name            : xorg-server-xnest
-Name            : xorg-server-xvfb
-Name            : xorg-sessreg
-Name            : xorg-setxkbmap
-Name            : xorg-smproxy
-Name            : xorg-x11perf
-Name            : xorg-xauth
-Name            : xorg-xbacklight
-Name            : xorg-xcmsdb
-Name            : xorg-xcursorgen
-Name            : xorg-xdpyinfo
-Name            : xorg-xdriinfo
-Name            : xorg-xev
-Name            : xorg-xgamma
-Name            : xorg-xhost
-Name            : xorg-xinit
-Name            : xorg-xinput
-Name            : xorg-xkbcomp
-Name            : xorg-xkbevd
-Name            : xorg-xkbutils
-Name            : xorg-xkill
-Name            : xorg-xlsatoms
-Name            : xorg-xlsclients
-Name            : xorg-xmodmap
-Name            : xorg-xpr
-Name            : xorg-xprop
-Name            : xorg-xrandr
-Name            : xorg-xrdb
-Name            : xorg-xrefresh
-Name            : xorg-xset
-Name            : xorg-xsetroot
-Name            : xorg-xvinfo
-Name            : xorg-xwayland
-Name            : xorg-xwd
-Name            : xorg-xwininfo
-Name            : xorg-xwud
-Name            : yarn
-Name            : yay
-Name            : zsh
+acpi
+alacritty
+archlinuxcn-keyring
+autoconf
+autojump
+automake
+base
+bat
+binutils
+bison
+chromium
+clang
+cmatrix
+cowsay
+dhcpcd
+efibootmgr
+eva
+exa
+fakeroot
+fcitx5
+fcitx5-chinese-addons
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-pinyin-zhwiki
+fcitx5-qt
+feh
+file
+findutils
+fish
+flex
+fzf
+gawk
+gcc
+gettext
+go
+grep
+groff
+grub
+gtkmm3
+gvfs-mtp
+gzip
+haveged
+i3-gaps
+kcalc
+lazygit
+libevent
+libtool
+libxcrypt-compat
+linux
+linux-firmware
+lolcat
+lua
+m4
+make
+miniconda
+neofetch
+neovim
+net-tools
+network-manager-applet
+networkmanager
+nm-connection-editor
+noto-fonts-emoji
+npm
+nvm
+open-vm-tools
+os-prober
+pacman
+pamac-aur
+patch
+picom
+pkgconf
+pnpm
+polkit
+proxychains-ng
+ranger
+rofi
+rp-pppoe
+rust
+sed
+sudo
+texinfo
+tmux
+ttf-dejavu
+ttf-droid
+ttf-font-awesome
+ttf-nerd-fonts-symbols
+ueberzug
+unzip
+vi
+vim
+which
+wqy-microhei
+wqy-zenhei
+xf86-input-synaptics
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-vesa
+xf86-video-vmware
+xorg-bdftopcf
+xorg-docs
+xorg-font-util
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-fonts-encodings
+xorg-iceauth
+xorg-mkfontscale
+xorg-server
+xorg-server-common
+xorg-server-devel
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-sessreg
+xorg-setxkbmap
+xorg-smproxy
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinit
+xorg-xinput
+xorg-xkbcomp
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwayland
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+yarn
+yay
+zsh
