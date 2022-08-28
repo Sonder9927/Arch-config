@@ -48,6 +48,8 @@ for_window [title="Welcome to PyCharm"]          floating enable resize set 800 
 #exec feh --randomize --bg-fill ~/Pictures/Background/Desktop_backgrd
 exec_always --no-startup-id xrandr -s 10 &
 exec_always --no-startup-id bash /home/merak/scripts/wallpaper.sh &
+exec_always --no-startup-id /home/merak/scripts/xcape/xcape -e "Mode_switch=Tab"
+#exec_always --no-startup-id bash /home/merak/scripts/xmod.sh
 exec_always --no-startup-id picom -CGb &
 #exec_always bash ~/.config/polybar/launch.sh --cuts
 #exec_always --no-startup-id variety
@@ -351,3 +353,4 @@ gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 popup_during_fullscreen smart
+
