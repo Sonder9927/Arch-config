@@ -195,11 +195,19 @@ see
 [ranger](https://ranger.github.io/)
 is a console file manager with VI key bindings.
 
+It's supported well for images preview, so I have downloaded both `ranger` and `lf`.
+
+To use preview should install `ueberzug`.
+
+I'd like to use `lf` on my ssh.
+
 After set fish, I can use `r` to start.
 
 ## rofi
 hotkey: `<alt-d>`
+
 ## eva
 math, type `<alt-m>`
+
 ## cmatrix
 code rain
