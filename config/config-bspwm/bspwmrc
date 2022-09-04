@@ -4,7 +4,8 @@
 xsetroot -cursor_name left_ptr
 bash $HOME/scripts/wallpaper.sh &
 ~/.config/polybar/launch.sh
-picom -f &
+killall picom
+picom -b
 fcitx5 &
 
 pgrep -x sxhkd > /dev/null || sxhkd &

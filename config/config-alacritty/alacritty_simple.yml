@@ -4,7 +4,19 @@ env:
 draw_bold_text_with_bright_colors: true
 
 window:
+  dimensions:
+    columns: 150
+    lines: 40
+  padding:
+    x: 2
   opacity: 0.8
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+Scrolling:
+  history: 5000
 
 cursor:
   style:
@@ -16,24 +28,51 @@ font:
   size: 20
   normal:
     family: JetBrainsMono
-    style: Regular
+    style: Bold
   bold:
     family: JetBrainsMono
     style: Bold
   italic:
-    family: Operator Mono
-    style: Italic
-  bold_italic:
-    family: Operator Mono
+    family: Operator Mono Bold
     style: Bold Italic
-
-live_config_reload: true
+  bold_italic:
+    family: Operator Mono Bold
+    style: Bold Italic
 
 colors:
   primary:
     background: '#2e3440'
-    # foreround: '#d8dee9'
-    # background: '0x272822'
     foreround: '0xf1ebeb'
-  normal:
-    black: '0x18262f'
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  bright:
+    black: '0x667581'
+    red: '0xef5253'
+    green: '0x7cc844'
+    yellow: '0xe4b51c'
+    magenta: '0xa363d5'
+    cyan: '0x52cbb0'
+    white: '0xf5f7fa'
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+live_config_reload: true 
+
+shell:
+  program: /usr/bin/fish
+  args:
+    - --login
+
+mouse:
+  double_click: { threshold: 300 }
+
+  hide_when_typing: true
+
+mouse_bindings:
+  - { mouse: Right, action: Paste }
+
+key_bindings:
+  - { key: P,      mods: Alt,                    action: Paste          }
