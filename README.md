@@ -149,13 +149,6 @@ pacman -Qei > pacmanList.lst
 cat pacmanList.lst | grep "Name" > pacmanListName.lst
 ```
 The list of packages installed by pacman is in the file `pacman.lst` and `pacmanName.lst`.
-## autojump
-`j somewhere`
-
-Very useful. See
-[Fissh Shell 使用笔记](https://segmentfault.com/a/1190000017843344?utm_source=tag-newest)
-
-Care of the path. My path is `/usr/share/autojump/autojump.fish`.
 ## fcitx5
 Better to google or baidu.
 
@@ -176,11 +169,15 @@ Default is English.
 > us
 > pinyin
 
-## neofetch
-`neofetch`
+## autojump
+recommend `z.lua`
 
-Print information of system.
+`j somewhere`
 
+Very useful. See
+[Fissh Shell 使用笔记](https://segmentfault.com/a/1190000017843344?utm_source=tag-newest)
+
+Care of the path. My path is `/usr/share/autojump/autojump.fish`.
 ## picom
 picom is a standalone compositor for Xorg, suitable for use with window managers that
 do not provide compositing.
@@ -189,25 +186,61 @@ see
 
 [i3 & picom config settings](https://zhuanlan.zhihu.com/p/148067171)
 
-## ranger
-`ranger`
+## More
+- neofetch
 
-[ranger](https://ranger.github.io/)
-is a console file manager with VI key bindings.
+  `neofetch`
 
-It's supported well for images preview, so I have downloaded both `ranger` and `lf`.
+  Print information of system.
 
-To use preview should install `ueberzug`.
+- ranger
 
-I'd like to use `lf` on my ssh.
+  `ranger` or `lf` with Golang more fast.
 
-After set fish, I can use `r` to start.
+  [ranger](https://ranger.github.io/) is a console file manager with VI key bindings.
 
-## rofi
-hotkey: `<alt-d>`
+  It's supported well for images preview, so I have downloaded both `ranger` and `lf`.
 
-## eva
-math, type `<alt-m>`
+  To use preview should install `ueberzug`.
 
-## cmatrix
-code rain
+  I'd like to use `lf` on my ssh.
+
+  After set fish, I can use `r` to start.
+
+- rofi
+
+  hotkey: `<alt-d>`
+
+- dunst
+
+  message
+
+- fzf
+- bat
+- git-delta
+- fd
+- rsync
+- jrnl
+
+  journal log
+
+- tldr
+
+  `tldr` or `tealdeer`
+- fnm
+
+  manage `nodejs` version for my lsp in lvim.
+- just
+
+  recipe shi pu. idea is from `make`
+- eva
+
+  math, type `<alt-m>`
+
+- cmatrix
+
+  code rain
+
+- sac
+
+  ?
